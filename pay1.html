@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-container {
+            background-color: #ffffff;
+            width: 350px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            background-color: #fafafa;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .pay-button {
+            width: 100%;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card-container">
+    <div class="header">
+        <span><b>Bank Credit/Debit</b></span>
+        <span style="font-size: 10px; color: green;">✔️ Secured</span>
+    </div>
+
+    <form>
+        <div class="input-group">
+            <label>Name on card</label>
+            <input type="text" placeholder="Name on your card">
+        </div>
+
+        <div class="input-group">
+            <label>Card number</label>
+            <input type="text" placeholder="0000 0000 0000 0000">
+        </div>
+
+        <div class="row">
+            <div class="input-group" style="flex: 1;">
+                <label>Expiry</label>
+                <input type="text" placeholder="MM/YY">
+            </div>
+            <div class="input-group" style="flex: 1;">
+                <label>CVV</label>
+                <input type="password" placeholder="***">
+            </div>
+        </div>
+
+        <button type="submit" class="pay-button">Pay</button>
+    </form>
+</div>
+
+</body>
+</html>
